@@ -28,4 +28,4 @@
 
 (效果图有点大，wait a moment)
 
-![效果图](https://github.com/YoRenChen/color-style-transform/docs/480_low.gif)
+![效果图](https://github.com/YoRenChen/color-style-transform/blob/master/docs/480_low.gif)
