@@ -1,0 +1,52 @@
+@import '../default.less';
+
+.@{unit-prefix}-layout {
+  background-color: @layout-body-background;
+  transition: all 0.3s;
+}
+
+.@{unit-prefix}-header {
+  background-color: @layout-header-background;
+}
+
+.@{unit-prefix}-page {
+
+  &-list {
+    background-color: @layout-header-background;
+
+    &-link {
+      color: @color-6;
+    }
+
+    &-figure {
+      background-color: @color-5;
+    }
+
+    &-warpper {
+      background-color: transparent;
+      color: @text-color;
+
+      &-li {
+        color: desaturate(@text-color, 20%);
+      }
+    }
+
+    &-loading {
+
+      .@{unit-prefix}-page-list-figure,
+      .@{unit-prefix}-page-list-warpper-title,
+      .@{unit-prefix}-page-list-warpper-li {
+        background-color: @pagelist-shadow-bg;
+      }
+
+      &::after {
+        background: linear-gradient(100deg,
+            fade(@white, 0) 45%,
+            fade(@white, 20) 50%,
+            fade(@white, 0) 55%) fade(@pagelist-shadow-bg, 0);
+        background-size: 200% 100%;
+        background-position-x: 150%;
+      }
+    }
+  }
+}

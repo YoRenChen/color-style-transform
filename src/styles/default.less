@@ -1,0 +1,69 @@
+@import './color/colorPalette.less';
+
+// color palettes
+@unit-prefix: unit;
+
+@primary-color: #1890ff;
+// @background-color: #ffffff;
+
+@theme: default;
+@component-background: #fff;
+@success-color: @color-7;
+@white: white;
+@black: black;
+@bg: @white;
+@normal-color: #d9d9d9;
+@layout-menu-background: #001529;
+@menu-bg: @component-background;
+@menu-dark-bg: @layout-menu-background;
+@menu-dark-text-color: @normal-color;
+@menu-text-hover-color: @white;
+@text-color: fade(@black, 65%);
+
+@background-color-base: hsv(0, 0, 96%); // Default grey background color
+@disabled-color: fade(#000, 25%);
+@disabled-bg: @background-color-base;
+@disabled-color-dark: fade(#fff, 35%);
+
+@layout-body-background: #f0f2f5;
+@layout-header-background: @white;
+
+@pagelist-shadow-bg: #aaa7a7;
+
+
+@color-1: color(~`colorPalette('@{color-6}', 1, '@{theme}')`);
+@color-2: color(~`colorPalette('@{color-6}', 2, '@{theme}')`);
+@color-3: color(~`colorPalette('@{color-6}', 3, '@{theme}')`);
+@color-4: color(~`colorPalette('@{color-6}', 4, '@{theme}')`);
+@color-5: color(~`colorPalette('@{color-6}', 5, '@{theme}')`);
+@color-6: @primary-color;
+@color-7: color(~`colorPalette('@{color-6}', 7, '@{theme}')`);
+@color-8: color(~`colorPalette('@{color-6}', 8, '@{theme}')`);
+@color-9: color(~`colorPalette('@{color-6}', 9, '@{theme}')`);
+@color-10: color(~`colorPalette('@{color-6}', 10, '@{theme}')`);
+
+
+.background {
+  background-color: @component-background;
+}
+
+.switch-checked {
+  background-color: @color-7;
+}
+
+.color {
+  .Loop(@index) when(@index<11) {
+
+    &-@{index} {
+      @num: 'color-@{index}';
+
+      height: 30px;
+      width: 200px;
+      background-color: @@num
+    }
+
+    .Loop(@index+1)
+  }
+
+  .Loop(1)
+}

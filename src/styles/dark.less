@@ -1,0 +1,28 @@
+@import './default.less';
+
+@theme: dark;
+@dark-bg: #141414;
+@component-background: @dark-bg;
+
+@white: rgba(255, 255, 255, .65);
+@bg: @black;
+@menu-dark-bg: #1f1f1f;
+@text-color: fade(@white, 85%);
+
+@layout-header-background: @component-background;
+@layout-body-background: fade(black, 85%);
+@layout-header-background: @menu-dark-bg;
+
+@pagelist-shadow-bg: #444141;
+
+// @color-d-1: color(~`colorPalette('@{color-d-6}', 1, '@{theme}')`);
+@color-1: mix(color(~`colorPalette('@{primary-color}', 8) `), @component-background, 15%);
+@color-2: mix(color(~`colorPalette('@{primary-color}', 7) `), @component-background, 25%);
+@color-3: mix(@primary-color, @component-background, 30%);
+@color-4: mix(@primary-color, @component-background, 45%);
+@color-5: mix(@primary-color, @component-background, 65%);
+@color-6: mix(@primary-color, @component-background, 85%);
+@color-7: mix(color(~`colorPalette('@{primary-color}', 5) `), @component-background, 90%);
+@color-8: mix(color(~`colorPalette('@{primary-color}', 4) `), @component-background, 95%);
+@color-9: mix(color(~`colorPalette('@{primary-color}', 3) `), @component-background, 97%);
+@color-10: mix(color(~`colorPalette('@{primary-color}', 2) `), @component-background, 98%);

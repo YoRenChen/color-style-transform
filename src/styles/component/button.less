@@ -1,0 +1,23 @@
+@import '../default.less';
+@unit-prefix: unit;
+
+.@{unit-prefix}-btn {
+  color: @text-color;
+  transition: all 0.3s;
+
+  &-switch {
+    background-color: @disabled-color;
+
+    &:hover {
+      background-color: fade(@disabled-color, 10%);
+    }
+
+    &-checked {
+      background-color: @color-6;
+
+      &:hover {
+        background-color: @color-7
+      }
+    }
+  }
+}

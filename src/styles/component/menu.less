@@ -1,0 +1,65 @@
+@import '../default.less';
+
+.@{unit-prefix}-menu {
+  background-color: @menu-bg;
+  height: 100%;
+  width: 210px;
+  transition: all 0.3s;
+
+  &-logo {
+    height: 64px;
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    line-height: 64px;
+    color: @white;
+    cursor: pointer;
+  }
+
+  &-item {
+    padding: 10px 16px;
+    margin: 4px 0;
+    cursor: pointer;
+    color: @text-color;
+
+    &:hover {
+      color: @menu-text-hover-color;
+    }
+
+    &-action {
+      background-color: @color-1;
+      color: @white;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        content: "";
+        width: 3px;
+        height: 100%;
+        background: @color-6;
+        border-radius: 0 5px 5px 0;
+      }
+    }
+  }
+}
+
+.@{unit-prefix}-menu-dark {
+  background-color: @menu-dark-bg;
+
+  .@{unit-prefix}-menu {
+    &-item {
+      color: @menu-dark-text-color;
+
+      &:hover {
+        color: @menu-text-hover-color;
+      }
+
+      &-action {
+        background-color: @color-6;
+      }
+    }
+  }
+}
