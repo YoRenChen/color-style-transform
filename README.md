@@ -6,6 +6,12 @@
 
 ![效果图](https://github.com/YoRenChen/color-style-transform/blob/master/docs/480_low.gif)
 
+
+## 文档说明地址
+该文档说明是在阅读 ``AntDesign`` 源码的时，把主题色风格转换模块抽取出来分析并对构建该 DEMO 的思路说明。详情请参考：
+
+[前端明暗风颜色切换](https://github.com/YoRenChen/Blog/issues/3)
+
 ## 前言
 
 构建 WEB 网站主题色系与 UI 统一，UI 组件和 UI 颜色体系一致的系统 DEMO。
@@ -45,7 +51,3 @@ npm run color
 npm run serve
 ```
 
-## 文档说明地址
-该文档说明是在阅读 ``AntDesign`` 源码的时，把主题色风格转换模块抽取出来分析并对构建该 DEMO 的思路说明。详情请参考：
-
-[前端明暗风颜色切换](https://github.com/YoRenChen/Blog/issues/3)
