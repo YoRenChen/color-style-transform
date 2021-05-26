@@ -35,8 +35,15 @@
 │   └── utils
 ├── vue.config.js
 ```
-
-可以直接执行`npm run color`进行生成样式文件
+### 生成样式文件
+```
+npm run color
+```
+### 运行
+`yarn install` or `npm i`
+```
+npm run serve
+```
 
 ## 文档说明地址
 该文档说明是在阅读 ``AntDesign`` 源码的时，把主题色风格转换模块抽取出来分析并对构建该 DEMO 的思路说明。详情请参考：
